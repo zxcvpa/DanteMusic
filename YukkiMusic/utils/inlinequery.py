@@ -48,7 +48,7 @@ answer.extend(
             title="End Stream",
             description="Stop the ongoing playout on group call.",
             thumb_url="https://telegra.ph/file/d2eb03211baaba8838cc4.png",
-            input_message_content=InputTextMessageContent("/stop"),
+            input_message_content=InputTextMessageContent("/end"),
         ),
         InlineQueryResultArticle(
             title="Shuffle Stream",
