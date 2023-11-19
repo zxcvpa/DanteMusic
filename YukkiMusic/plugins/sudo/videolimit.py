@@ -28,13 +28,13 @@ async def set_video_limit_kid(client, message: Message, _):
     message.chat.id
     state = message.text.split(None, 1)[1].strip()
     if state.lower() == "disable":
-        limit = 0
+        limit = 360
         await set_video_limit(limit)
         return await message.reply_text(_["vid_4"])
     if state.isnumeric():
         limit = int(state)
         await set_video_limit(limit)
-        if limit == 0:
+        if limit == 360:
             return await message.reply_text(_["vid_4"])
         await message.reply_text(_["vid_3"].format(limit))
     else:
