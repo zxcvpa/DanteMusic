@@ -1,9 +1,14 @@
+ <h1 align="center">
+  <b>🤖 𝗭𝗘𝗨𝗫 𝗥𝗢𝗕𝗢𝗧 🤖</b>
+ </h1>
+<p align="center">
+<a href="https://telegram.me/ZeuxXRobot"><img src="https://img.shields.io/badge/-🤖𝗭𝗘𝗨𝗫%20𝗥𝗢𝗕𝗢𝗧🤖-Grey.svg?style=for-the-badge&logo=Telegram"></a>
+</p1>
+  
+
 <p align="center">
   <img src="https://telegra.ph/file/3248bb49c94172c834427.jpg" alt="Dante Logo">
 </p>
-<h1 align="center">
-  <b>DANTE MUSIC</b>
-</h1>
 
 ----
 
