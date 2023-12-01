@@ -34,7 +34,7 @@
 - Install Node by :
 `curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm`
 - Clone the repository by :
-`git clone https://github.com/xflydan/DanteMusicBot && cd DanteMusicBot`
+`git clone https://github.com/xflydan/DanteMusic && cd DanteMusic`
 - Install the requirements:      
 `pip3 install -U -r requirements.txt`
 - Create .env  with sample.env by :
