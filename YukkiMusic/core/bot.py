@@ -19,9 +19,9 @@ from ..logging import LOGGER
 
 class YukkiBot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Starting Bot")
+        LOGGER(__name__).info(f"MENGAKTIFKAN BOT")
         super().__init__(
-            "YukkiMusicBot",
+            "DanteMusic",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -34,26 +34,26 @@ class YukkiBot(Client):
         self.id = get_me.id
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "Bot Started"
+                config.LOG_GROUP_ID, "🤖 BOT AKTIF YA KONTOL"
             )
         except:
             LOGGER(__name__).error(
-                "Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!"
+                "Bot gagal mengakses Grup log. Pastikan Anda telah menambahkan bot ke saluran log Anda dan dipromosikan sebagai admin!"
             )
             sys.exit()
         if config.SET_CMDS == str(True):
             try:
                 await self.set_bot_commands(
                     [
-                        BotCommand("ping", "Check that bot is alive or dead"),
-                        BotCommand("play", "Starts playing the requested song"),
-                        BotCommand("skip", "Moves to the next track in queue"),
-                        BotCommand("pause", "Pause the current playing song"),
-                        BotCommand("resume", "Resume the paused song"),
-                        BotCommand("end", "Clear the queue and leave voice chat"),
-                        BotCommand("shuffle", "Randomly shuffles the queued playlist."),
-                        BotCommand("playmode", "Allows you to change the default playmode for your chat"),
-                        BotCommand("settings", "Open the settings of the music bot for your chat.")
+                        BotCommand("ping", "Periksa apakah bot itu hidup atau mati"),
+                        BotCommand("play", "Mulai memutar lagu yang diminta"),
+                        BotCommand("skip", "Pindah ke trek berikutnya dalam antrian"),
+                        BotCommand("pause", "Jeda lagu yang sedang diputar"),
+                        BotCommand("resume", "Lanjutkan lagu yang dijeda"),
+                        BotCommand("end", "Hapus antrian dan tinggalkan obrolan suara"),
+                        BotCommand("shuffle", "Mengacak daftar putar antrean secara acak."),
+                        BotCommand("playmode", "Memungkinkan Anda mengubah mode putar default untuk obrolan Anda"),
+                        BotCommand("settings", "Buka pengaturan bot musik untuk obrolan Anda.")
                         ]
                     )
             except:
@@ -63,11 +63,12 @@ class YukkiBot(Client):
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != "administrator":
             LOGGER(__name__).error(
-                "Please promote Bot as Admin in Logger Group"
+                "Harap promosikan Bot sebagai Admin di Grup Logger"
             )
             sys.exit()
         if get_me.last_name:
             self.name = get_me.first_name + " " + get_me.last_name
         else:
             self.name = get_me.first_name
-        LOGGER(__name__).info(f"MusicBot Started as {self.name}")
+        LOGGER(__name__).info(f"🤖 BOT MUSIC DIAKTIFKAN SEBAGAI {self.name}")
+        
