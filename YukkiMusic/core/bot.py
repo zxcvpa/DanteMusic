@@ -17,7 +17,7 @@ import config
 from ..logging import LOGGER
 
 
-class YukkiBot(Client):
+class DanteMusic(Client):
     def __init__(self):
         LOGGER(__name__).info(f"MENGAKTIFKAN BOT")
         super().__init__(
